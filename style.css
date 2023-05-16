@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+	background-color: black;
+	background: linear-gradient(55deg, #000000 0%, #000000 51%, #28262c 85%);
+  color: white;
+	background-repeat: cover;
+}
+#main {
+  display: flex;
+  width: 100%;
+  color:white
+}
+#main div {
+  border-radius: 24px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 0px;
+	overflow-y: scroll;
+	height: 30ch;
+}
+#alt1 {
+  display: flex;
+  width: 100%;
+  color:white
+}
+#alt1 div {
+  border-radius: 24px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 0px;
+	overflow-y: scroll;
+	height: 20ch;
+}
+#alt1 .log {
+  flex: 1.5 1.15 0px
+}#main .log {
+  flex: 2.70 1 0px
+}#main .logb {
+  flex: 1.3 1 0px
+}
+div center img {
+  border-radius: 24px;
+  border: 2px solid #5e5e5e;
+}
+a {
+	transform: rotateY(20deg);
+	text-shadow: 2px 2px 5px #fcfcfc;
+  color: white;
+  text-decoration: none;
+  transition: all 0.7s
+}
+a:hover {
+  color: #ffbb00;
+	text-shadow: 2px 2px 5px #4d4200;
+  font-weight: bold;
+	text-decoration: dotted;
+	transform: rotateY(0deg);
+}
+div div {
+	transition: all 0.5s;
+	border-radius: 24px;
+	transform: rotateY(10deg);
+	filter: blur(1px) grayscale(100%)
+}
+div div:hover {
+	background-color: black;
+	border-radius: 1px;
+	transform: rotateY(0deg);
+	filter: blur(0px)  grayscale(0%);
+}
+body div {
+  filter: blur(2px)
+}
+body div:hover {
+	filter: blur(0px)
+}
+div img {
+	filter: inherit;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #333333;
+  border-radius: 24px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 24px;
+}
+#beanbg {
+	background-image: url('https://s3-eu-west-1.amazonaws.com/video.gallereplay.com/artistarea/Spinning+Coffee+Bean_bbf4cadc-459a-4a13-9d7c-172a2172a2b0/Cinemagraph_watermark/576x324/cinemagraph.gif');
+	background-size: cover;
+}
+section:hover {
+	filter: saturate(1.2);
+}
+@keyframes rotate {
+				from {
+					transform: rotateY(0deg);
+				}
+
+				to {
+					transform: rotateY(359deg);
+				}
+			}
+@keyframes rotatec {
+				from {
+					transform: rotateY(-359deg);
+				}
+
+				to {
+					transform: rotateY(0deg);
+				}
+			}
+#titleflop {
+	animation: rotate 3s linear infinite;
+}
+#titleflopc {
+	animation: rotatec 3s linear infinite;
+}
+tlms {
+	font-size: 12px;
+}
