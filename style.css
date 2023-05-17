@@ -118,11 +118,11 @@ section:hover {
 			}
 @keyframes rotatec {
 				from {
-					transform: rotateY(-359deg);
+					transform: rotateY(0deg);
 				}
 
 				to {
-					transform: rotateY(0deg);
+					transform: rotateY(-359deg);
 				}
 			}
 #titleflop {
