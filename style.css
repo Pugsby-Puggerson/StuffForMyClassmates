@@ -53,7 +53,7 @@ div center img {
 a {
 	transform: rotateY(20deg);
 	text-shadow: 2px 2px 5px #fcfcfc;
-  color: white;
+  color: rgb(0, 123, 255);
   text-decoration: none;
   transition: all 0.7s
 }
