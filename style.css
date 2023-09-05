@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -53,7 +54,7 @@ div center img {
 a {
 	transform: rotateY(20deg);
 	text-shadow: 2px 2px 5px #fcfcfc;
-  color: rgb(0, 123, 255);
+  color: rgb(238, 246, 255);
   text-decoration: none;
   transition: all 0.7s
 }
@@ -133,4 +134,9 @@ section:hover {
 }
 tlms {
 	font-size: 12px;
+}
+/* I don't know what went wrong but I have to fix coloring */
+
+a {
+	color: white
 }
