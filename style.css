@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -9,6 +7,8 @@ body {
   font-family: 'Nunito', sans-serif;
 	background-color: black;
 	background: linear-gradient(55deg, #000000 0%, #000000 51%, #28262c 85%);
+	background-size: 100%;
+
   color: white;
 	background-repeat: cover;
 }
