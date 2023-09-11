@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('font.ttf');
 
 body {
     color: white;
-    background-color: rgb(3, 3, 4);
-    font-family: 'Nunito', sans-serif;
+    background-color: black;
+    font-family: 'IBM Plex Mono', sans-serif;
 }
