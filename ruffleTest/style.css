@@ -1,0 +1,29 @@
+#main {
+        background-color: #232629;
+        display: flex;
+        margin: 0px;
+        overflow-x: hide !important;
+        color: white;
+        font-family: sans-serif;
+}
+body {
+        background-color: #232629;
+        margin: 0px;
+        overflow-x: hide !important;
+        color: white;
+        font-family: sans-serif;
+}
+.box {
+        border-radius: 10px;
+        background-color: #161718;
+        overflow: hide !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0px
+}
+#d1 {
+        width: 700vw;
+        margin-right: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>flash testing</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="d1" class="box">
+      <embed id="game" src=".swf" width="100%" height="100%">
+    </div>
+    <div id="d2" class="box">
+      <p>This would not be possible without <b>Ruffle</b>. If Ruffle had never existed, our flash section wouldn't either.</p>
+      <label for="text">Game File</label>
+      <input id="text" name="text" type="text" />
+      <button onclick="change()">Run</button>
+      <p id="notif"></p>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const gm = params.get("game");
+      console.log(gm);
+      console.log(params);
+      if (params.size === 0) {
+        console.log("bruh")
+        document.getElementById("notif").innerHTML = "No file loaded, Please type in the file name of the game you want to play. (ex: swf/level1.swf)"
+      }
+      document.getElementById("game").setAttribute("src", gm)
+      function change() {
+        if ('URLSearchParams' in window) {
+          var searchParams = new URLSearchParams(window.location.search);
+          searchParams.set("game", document.getElementById("text").value);
+          window.location.search = searchParams.toString();
+        }
+      }
+      function upload() {
+        if ('URLSearchParams' in window) {
+          var searchParams = new URLSearchParams(window.location.search);
+          searchParams.set("game", document.getElementById("file").value);
+          window.location.search = searchParams.toString();
+        }
+      }
+    </script>
+  </div>
+  <h2>How to add your own games</h2>
+  <p>1. Go to <a href="https://replit.com/@pugsforlifebruh/Test-1">this repl</a><br>
+  2. Find a swf file, Here's an example: <a href="https://archive.org/download/halloween.swf/halloween.swf">Halloween Flash Game</a><br>
+  3. Fork the repl<br>
+  4. Upload the swf file<br>
+  5. Run your forked repl</p>
+  <p>If you already have a forked repl, you can just add the swf file to the forked repl.</p>
+</body>
+</html>
