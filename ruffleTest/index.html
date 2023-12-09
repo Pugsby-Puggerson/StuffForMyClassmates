@@ -18,12 +18,15 @@
       <input id="text" name="text" type="text" />
       <button onclick="change()">Run</button>
       <p id="notif"></p>
+            <label for="text">Width</label>
+                  <input id="text1" name="text" type="text" />
     </div>
     <script>
       const params = new URLSearchParams(window.location.search);
       const gm = params.get("game");
       console.log(gm);
       console.log(params);
+            document.getElementById("text1").value = "500%"
       if (params.size === 0) {
         console.log("bruh")
         document.getElementById("notif").innerHTML = "No file loaded, Please type in the file name of the game you want to play. (ex: swf/level1.swf)"
@@ -44,6 +47,16 @@
         }
       }
     </script>
+          <script>
+                  function change() {
+                            document.getElementById("d1").style.width = document.getElementById("text1").value;
+                            setTimeout(() => { change(); }, 100);
+                    }
+                  change()
+          </script>
+  </div>
+                }
+          </script>
   </div>
   <h2>How to add your own games</h2>
   <p>1. Go to <a href="https://replit.com/@pugsforlifebruh/Test-1">this repl</a><br>
