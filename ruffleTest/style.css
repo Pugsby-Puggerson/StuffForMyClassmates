@@ -24,6 +24,23 @@ body {
         padding: 0px
 }
 #d1 {
-        width: 700vw;
+        width:500%;
         margin-right: 5px;
+}
+.kribi {
+        border-radius: 5px;
+}
+.kribidad {
+        display: flex;
+        margin: 0;
+}
+.kribidad p {
+        color:white;
+        text-decoration: none;
+        text-decoration-color: #161718;
+        underline: none;
+}
+.coolguy {
+        text-size-adjust: smaller;
+        font-size: x-small;
 }
