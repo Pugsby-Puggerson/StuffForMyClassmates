@@ -42,20 +42,13 @@
           window.location.search = searchParams.toString();
         }
       }
-      function upload() {
-        if ('URLSearchParams' in window) {
-          var searchParams = new URLSearchParams(window.location.search);
-          searchParams.set("game", document.getElementById("file").value);
-          window.location.search = searchParams.toString();
-        }
-      }
     </script>
           <script>
-                  function change() {
+                  function changex() {
                             document.getElementById("d1").style.width = document.getElementById("text1").value;
-                            setTimeout(() => { change(); }, 100);
+                            setTimeout(() => { changex(); }, 100);
                     }
-                  change()
+                  changex()
           </script>
   </div>
                 }
