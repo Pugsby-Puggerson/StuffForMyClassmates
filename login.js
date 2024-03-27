@@ -1,1 +1,0 @@
-window.open("main.html");
